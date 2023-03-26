@@ -17,3 +17,5 @@ A cotação da moeda é feita em tempo real ultilisando API Open Exchange rates 
 
 ## Link da documentação da API:
     - https://docs.openexchangerates.org/reference/api-introduction
+
+#challengeoneconversorbr4
