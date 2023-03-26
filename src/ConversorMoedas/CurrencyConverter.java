@@ -3,22 +3,23 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DecimalFormat;
 
 public class CurrencyConverter {
     private static final String API_KEY = "2f7ce7c34e9440b7accb5caac6e4d784";
     private static final String API_URL = "https://openexchangerates.org/api/latest.json?app_id=" + API_KEY;
 
-    public static double usdToBrl;
-    public static double eurToBrl;
-    public static double gbpToBrl;
-    public static double clpToBrl;
-    public static double arsToBrl;
+    public static double usdToBrl; // dollar para Real //
+    public static double eurToBrl; // Euro para Real //
+    public static double gbpToBrl; // Libras para Real //
+    public static double clpToBrl; // Pesos Chileno para Real //
+    public static double arsToBrl; // Pesos Argentino para Real //
 
-    public static double brlToUsd;
-    public static double brlToEur;
-    public static double brlToGbp;
-    public static double brlToClp;
-    public static double brlToArs;
+    public static double brlToUsd; // Real para Dollar //
+    public static double brlToEur; // Real para Euro //
+    public static double brlToGbp; // Real para Libras //
+    public static double brlToClp; // Real para pesos Chilenos //
+    public static double brlToArs; // Real para pesos Argentinos //
 
     public static void updateExchangeRates() throws Exception {
         String urlStr = API_URL + "&symbols=USD,EUR,GBP,CLP,ARS,BRL";
