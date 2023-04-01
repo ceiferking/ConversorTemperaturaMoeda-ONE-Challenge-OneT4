@@ -6,7 +6,7 @@ import java.net.URL;
 import java.text.DecimalFormat;
 
 public class CurrencyConverter {
-    private static final String API_KEY = "2f7ce7c34e9440b7accb5caac6e4d784";
+    private static final String API_KEY = "sua api key";
     private static final String API_URL = "https://openexchangerates.org/api/latest.json?app_id=" + API_KEY;
 
     public static double usdToBrl; // dollar para Real //
